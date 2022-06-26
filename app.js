@@ -19,6 +19,7 @@ image2.addEventListener("click", enlarge2);
 image3.addEventListener("click", enlarge3);
 image4.addEventListener("click", enlarge4);
 image5.addEventListener("click", enlarge5);
+
 //image3.addEventListener("click", enlarge3);
 //image4.addEventListener("click", enlarge4);
 //image5.addEventListener("click", enlarge5);
@@ -56,7 +57,33 @@ function deterOpacity() {
   }
 }
 
+let count1 = 1;
+let firstCount = 0;
+let count2 = 0;
+let count3 = 0;
+let count4 = 0;
+let count5 = 0;
+
 function enlarge1() {
+  count2 = 0;
+  count3 = 0;
+  count4 = 0;
+  count = 5;
+
+  if (firstCount == 0) {
+    firstCount++;
+    return;
+  }
+
+  count1++;
+
+  if (count1 > 1) {
+    console.log(count1);
+    return;
+  }
+
+  console.log(count1);
+
   let previousText = deterOpacity();
 
   previousText.style.transition = "opacity 0s";
@@ -74,6 +101,20 @@ function enlarge1() {
 }
 
 function enlarge2() {
+  firstCount++;
+  console.log(count1);
+
+  count1 = 0;
+  count3 = 0;
+  count4 = 0;
+  count5 = 0;
+
+  count2++;
+  if (count2 > 1) {
+    console.log(count2);
+    return;
+  }
+
   deter4500px().style.width = "600px";
 
   setTimeout(function () {
@@ -96,6 +137,18 @@ function enlarge2() {
 }
 
 function enlarge3() {
+  firstCount++;
+  count1 = 0;
+  count2 = 0;
+  count4 = 0;
+  count5 = 0;
+
+  count3++;
+  if (count3 > 1) {
+    console.log(count2);
+    return;
+  }
+
   deter4500px().style.width = "600px";
 
   setTimeout(function () {
@@ -117,6 +170,18 @@ function enlarge3() {
 }
 
 function enlarge4() {
+  firstCount++;
+  count1 = 0;
+  count2 = 0;
+  count3 = 0;
+  count5 = 0;
+
+  count4++;
+  if (count4 > 1) {
+    console.log(count2);
+    return;
+  }
+
   deter4500px().style.width = "600px";
 
   setTimeout(function () {
@@ -138,6 +203,18 @@ function enlarge4() {
 }
 
 function enlarge5() {
+  firstCount++;
+  count1 = 0;
+  count2 = 0;
+  count3 = 0;
+  count4 = 0;
+
+  count5++;
+  if (count5 > 1) {
+    console.log(count2);
+    return;
+  }
+
   deter4500px().style.width = "600px";
 
   setTimeout(function () {
