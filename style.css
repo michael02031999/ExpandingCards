@@ -22,7 +22,7 @@ img {
 }
 
 #firstImg {
-  width: 850px;
+  max-width: 4500px;
   height: 550px;
   height: 100%;
 }
@@ -30,8 +30,8 @@ img {
 #miniContainer1 {
   border-radius: 50px;
 
-  max-width: 4500px;
-
+  width: 4500px;
+  object-fit: cover;
   height: 550px;
 
   height: 80%;
@@ -39,23 +39,26 @@ img {
 
   overflow: hidden;
   margin: 0px 25px 0px 50px;
-  transition: width 1s;
+  /*transition: width 1s;*/
   position: relative;
 }
 
 #secondImg {
   width: 850px;
+
   height: 550px;
   height: 100%;
 }
 
 #miniContainer2 {
   border-radius: 50px;
-  width: 550px;
+  width: 600px;
+
   height: 550px;
 
   height: 80%;
-  width: 100%;
+
+  object-fit: cover;
 
   background-color: black;
   overflow: hidden;
@@ -76,7 +79,7 @@ img {
   height: 550px;
 
   height: 80%;
-  width: 100%;
+
   background-color: black;
   overflow: hidden;
   margin: 0px 25px 0px 0px;
@@ -96,7 +99,7 @@ img {
   height: 550px;
 
   height: 80%;
-  width: 100%;
+
   background-color: black;
   overflow: hidden;
   margin: 0px 25px 0px 0px;
@@ -115,7 +118,7 @@ img {
   width: 600px;
   height: 550px;
   height: 80%;
-  width: 100%;
+
   background-color: black;
   overflow: hidden;
   margin: 0px 50px 0px 0px;

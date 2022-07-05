@@ -88,7 +88,7 @@ function enlarge1() {
 
   previousText.style.transition = "opacity 0s";
   previousText.style.opacity = "0";
-
+  console.log(deter4500px());
   deter4500px().style.width = "600px";
   image1.style.width = "4500px";
 
@@ -98,6 +98,11 @@ function enlarge1() {
       text1.style.opacity = "1";
     }
   }, 500);
+
+  console.log(image2.style.width);
+  console.log(image3.style.width);
+  console.log(image4.style.width);
+  console.log(image5.style.width);
 }
 
 function enlarge2() {
@@ -114,6 +119,8 @@ function enlarge2() {
     console.log(count2);
     return;
   }
+
+  image1.style.transition = "width 1s";
 
   deter4500px().style.width = "600px";
 
@@ -134,6 +141,7 @@ function enlarge2() {
   }
 
   image2.style.width = "4500px";
+  console.log(image2.style.width);
 }
 
 function enlarge3() {
@@ -142,6 +150,8 @@ function enlarge3() {
   count2 = 0;
   count4 = 0;
   count5 = 0;
+
+  image1.style.transition = "width 1s";
 
   count3++;
   if (count3 > 1) {
@@ -176,6 +186,8 @@ function enlarge4() {
   count3 = 0;
   count5 = 0;
 
+  image1.style.transition = "width 1s";
+
   count4++;
   if (count4 > 1) {
     console.log(count2);
@@ -208,6 +220,8 @@ function enlarge5() {
   count2 = 0;
   count3 = 0;
   count4 = 0;
+
+  image1.style.transition = "width 1s";
 
   count5++;
   if (count5 > 1) {
